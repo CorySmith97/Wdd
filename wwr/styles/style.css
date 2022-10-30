@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Rubik+Dirt&display=swap');
 
-header {
-    margin: 0 auto;
-}
-
-
 div {
     max-width: 1600px;
 }
@@ -19,12 +14,18 @@ body {
     padding: 0;
 }
 header {
+    display: grid;   
+    grid-template-columns: 150px auto;
     background-color: #2A9D8F;
     font-family: 'Rubik Dirt', ('Times New Roman', Times, serif);
-    
+}
+nav {
+    display: flex;
+    background-color: beige;
+    justify-content: space-around;
 }
 nav a:hover {
-    background-color: beige;
+    background-color: gray;
     color: #F4A261;
 }
 .home-title {
@@ -57,11 +58,28 @@ nav a {
     text-align: center;
     color: #2A9D8F;
     text-decoration: none;
-    padding: 35x;
+    padding: 35px;
+    
 }
-#hero_box {
-    margin: 0 auto;
-    text-align: center;
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero_img {
+    width: auto;
+    position: relative;
+    
+}
+#hero_msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
 }
 #hero_msg h1 {
     text-align: center;
@@ -70,6 +88,7 @@ nav a {
 }
 #hero_msg h4 {
     text-align: center;
+    color: white
 }
 .button-box {
     text-align: center;
@@ -126,4 +145,7 @@ footer .social img {
 }
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+
 }

@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
-html,body{
-  margin:0;
-  height:120%;
-  font-family: 'Josefin Sans', sans-serif;
 
-}
 a{
   text-decoration:none
 }
@@ -70,7 +64,7 @@ nav a {
     padding: 35px;
 }
 nav a:hover {
-    background-color: gray;
+    background-color: grey;
     color: #F4A261;
 }
 h2 {
@@ -78,12 +72,21 @@ h2 {
     text-decoration: none;
     font-size: 30px;
 }
-
-
-#main_content {
+section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
+.hidden {
+    opacity: 0;
+    transform: all 2.5s;
+}
+.show {
+    opacity: 1;
+}
+
+
 
 #logo {
     justify-content: center;
@@ -95,6 +98,7 @@ body {
     font-family: ('IBM Plex Mono', ('Times New Roman', Times, serif));
     margin: auto;
     padding: auto;
+    display: grid;
     
 }
 #main_content h2 {
@@ -126,3 +130,125 @@ footer a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
+.login{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: #396E94;  
+    border-radius: 15px ;  
+      
+}  
+h2{  
+text-align: center;  
+color: #277582;  
+padding: 20px;  
+}  
+label{  
+color: #08ffd1;  
+font-size: 17px;  
+}  
+#Uname{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 3px;  
+padding-left: 8px;  
+}  
+#Pass{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 3px;  
+padding-left: 8px;  
+  
+}  
+#log{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 17px;  
+padding-left: 7px;  
+color: blue;  
+transition-duration: 0.4s;
+
+
+}  
+
+  
+#log:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.loginbody {
+    background-color: #9fbed4;
+    font-family: ('IBM Plex Mono', ('Times New Roman', Times, serif));
+    margin: auto;
+    padding: auto;
+    
+}
+span{  
+color: white;  
+font-size: 17px;  
+}  
+ 
+* {
+    box-sizing: border-box;
+  }
+  
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    margin-bottom: 25vh;
+    
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: auto;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .price_base {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #396E94;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }

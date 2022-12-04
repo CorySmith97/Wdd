@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <div id = 'content'>
@@ -13,16 +14,18 @@
             <div class="header"> 
                 <h1>Small Business Builder</h1>
             </div>
-           
-            <nav>
-                <a href = "index.html"> Home</a>
-                <a href="pricing.html"> Pricing</a>
-                <a href ="mission.html"> Our Mission</a>
-                <a href="login.html">Login</a>
-            </nav>
+            <div class="navbar">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href = "index.html"> Home</a>
+                    <a href="pricing.html"> Pricing</a>
+                    <a href ="mission.html"> Our Mission</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+              <span onclick="openNav()">open</span>
         </header>
         <div id ="main_content">
-            <img id = "main_content_img" src="images/pricing.png">
             <main>
                 <p>
                     No one wants to spend a lot of money for services that can be found for free in many places.
@@ -39,30 +42,30 @@
                 </p>
                 <div class="columns">
                     <ul class="price">
-                      <li class="price_base">Basic</li>
+                      <li class="price_base">Indiviual</li>
                       <li class="grey">$ 9.99 / year</li>
                       <li>10GB Storage</li>
-                      <li>10 Emails</li>
+                      <li>Single account access</li>
                       <li class="grey"><a href="#" class="button">Sign Up</a></li>
                     </ul>
                   </div>
                   
                   <div class="columns">
                     <ul class="price">
-                      <li class="price_base" style="background-color:#396E94">Pro</li>
-                      <li class="grey">$ 24.99 / year</li>
+                      <li class="price_base" style="background-color:#396E94">Professional</li>
+                      <li class="grey">$ 249.99 / year</li>
                       <li>25GB Storage</li>
-                      <li>25 Emails</li>
+                      <li>up to 5 team members</li>
                       <li class="grey"><a href="#" class="button">Sign Up</a></li>
                     </ul>
                   </div>
                   
                   <div class="columns">
                     <ul class="price">
-                      <li class="price_base">Premium</li>
-                      <li class="grey">$ 49.99 / year</li>
+                      <li class="price_base">Enterprise</li>
+                      <li class="grey">$ 2499.99 / year</li>
                       <li>50GB Storage</li>
-                      <li>50 Emails</li>
+                      <li>up to 25 team members</li>
                       <li class="grey"><a href="#" class="button">Sign Up</a></li>
                     </ul>
                   </div>

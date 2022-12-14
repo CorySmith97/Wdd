@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build your Business</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
-    <div id = 'content'>
         <header>
             <div class="header"> 
                 <h1>Small Business Builder</h1>
             </div>
-            
-            <nav>
+            <nav id="navbar">
                 <a href = "index.html"> Home</a>
                 <a href="pricing.html"> Pricing</a>
                 <a href ="mission.html"> Our Mission</a>
                 <a href="login.html">Login</a>
             </nav>
         </header>
-        <div id="main">
+        <div class="home-grid">
             <section class="hidden">
                 <h2>Build Youself!</h2>
             </section>
-
-            <section class="hidden">
+            <section id="picture1">
+                <img class="picture1" src="images/thigs-every-business-owner-should-know-header_2_75.jpg">
+            </section>
+            <section class="paragraph1">
                 <p2> No business owner wants to spend all of their time working paperwork and making sure their calender is lined up.
                         BuildYourBusiness is a web application with the purpose of helping small businesses streamline
                         their day to day. The application offers many features to allow your to focus on doing the best job you can.
@@ -34,40 +35,33 @@
                         invoice and money management for your day to day operations.  
                 </p2>
             </section>
+            <section id="picture2">
+                <img class="picture2" src="images/130231866_web1_WEB-ICON-Calendar_2_48.jpeg">
 
-            <section class="hidden">
+            </section>
+            <section class="paragraph2">
                 <p3>Calendars are often times the main organizational tool that business owners use on a daily basis. We have
                             taken notice of that and seek to streamline the calendar system that you use. Like many other competetors we
                             offer the ability to manage multiple calendars so that each member of your team can see their daily tasks, and plan accordingly.
                             In our experience as teams begin to utilize these tools, their businesses begin to grow, and the owner roll slowly is able to take
                             a less stressed role. While it may seem simple, when the proper tools are available, works of art are able to be created. 
                 </p3>
-            </section>
-            <footer>
                 
-                <p>Please check out our mission to learn more about where BuildYourBusiness was first conceived! We look forward to be able 
-                    to serve you and help you Build your business!</p>
-                <p>Build Your Business &copy; 2022 - Cory Smith</p>
-                <p><a href="site-plan.html">Site Plan</a></p>
-                <p><a href="contactus.html">Contact Us</a></p>
-                <div class="social">
-                    <a href="index.html">
-                        <img class = "logo" src="../buildyourbusiness/images/logo.png" alt="byb logo"/>
-                    </a>
-                    <a href="https://facebook.com">
-                        <img src="images/facebook.png" alt="fb icon">
-                    </a>
-                    <a href="https://twitter.com">
-                        <img src="images/twitter.png" alt="twitter icon">
-                    </a>
-                    <a href="https://instagram.com">
-                        <img src="images/instagram.png" alt="instagram icon">
-                    </a>
-                    
+            </section>
+        <footer>
+            <div class="footer">
+                <p class="footer-text-left">
+                    <a>Build Your Business &copy; 2022 - Cory Smith</a>
+                <div class="footer-content-right">
+                <a href="site-plan.html"><img src="images/logo.png" class="icon-style"></a>
+                <a href="www.facebook.com"><img src="images/facebook.png" class="icon-style" alt="Github icon"></a>
+                <a href="www.instagram.com"><img src="images/instagram.png" class="icon-style" alt="Twitter icon"></a>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" class="icon-style" alt="Emailicon"></a>
                 </div>
-                <a href="site-plan"> Temporary Link to Site Plan</a>
-            </footer>
-        </div>
+                </p>
+              </div>
+
+        </footer>
     </div>
     
 </body>
